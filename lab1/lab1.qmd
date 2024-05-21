@@ -39,21 +39,21 @@ https://storage.yandexcloud.net/arrow-datasets/yaqry_dataset.pqt
 
 ![Storage Yandex Cloud](img/1.jpg)
 
-Теперь, после создания соединения, нужно указать, какой объект
-использовать в качестве источника данных. Для этого нужно сделать
-привязку данных.
+Теперь, после создания соединения, нужно указать, какой объект использовать в качестве источника данных. Для этого нужно сделать привязку данных.
 
 ![Storage Yandex Cloud](img/2.jpg)
 
 Формат входных данных:
 
-    SCHEMA=(
-    timestamp TIMESTAMP NOT NULL,
-    src STRING,
-    dst STRING,
-    port INT32,
-    bytes INT32
-    )
+```         
+SCHEMA=(
+timestamp TIMESTAMP NOT NULL,
+src STRING,
+dst STRING,
+port INT32,
+bytes INT32
+)
+```
 
 Если настройки сделаны правильно, то запрос покажет таблицу.
 
