@@ -65,7 +65,7 @@ bytes INT32
 
 ![Storage Yandex Cloud](img/4.jpg)
 
-``` sql
+``` 
 SELECT
    COUNT(DISTINCT src)
 FROM
@@ -81,7 +81,7 @@ LIMIT 100;
 
 ![Storage Yandex Cloud](img/5.jpg)
 
-``` sql
+```
 SELECT
    SUM(bytes)
 FROM
@@ -97,7 +97,7 @@ LIMIT 100;
 
 ![Storage Yandex Cloud](img/6.jpg)
 
-``` sql
+```
 SELECT
    SUM(bytes)
 FROM
@@ -116,3 +116,7 @@ LIMIT 100;
 ## Вывод
 
 Была осуществлена работа с системой Yandex Cloud и сервисами внутри неё.
+
+```{r}
+sprintf("Практическая работа 1 завершена")
+```

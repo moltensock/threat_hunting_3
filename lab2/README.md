@@ -50,26 +50,17 @@ Query, полученным в ходе выполнения практичес�
 3.  Выбрать в разделе “Файлы и сервисы” Yandex Query
 4.  Настроить и проверить подключение
 
-<figure>
-<img src="img/1.jpg" alt="Storage Yandex Cloud" />
-<figcaption aria-hidden="true">Storage Yandex Cloud</figcaption>
-</figure>
+![](img/1.jpg)
 
 ### 2. Создать из запроса YandexQuery датасет DataLens
 
-<figure>
-<img src="img/3.jpg" alt="Storage Yandex Cloud" />
-<figcaption aria-hidden="true">Storage Yandex Cloud</figcaption>
-</figure>
+![](img/3.jpg)
 
 ### 3. Делаем нужные графики и диаграммы
 
 Новое поле создаётся так:
 
-<figure>
-<img src="img/4.jpg" alt="Storage Yandex Cloud" />
-<figcaption aria-hidden="true">Storage Yandex Cloud</figcaption>
-</figure>
+![](img/4.jpg)
 
     https://cloud.yandex.ru/ru/docs/datalens/concepts/calculations/formula-syntax
 
@@ -90,26 +81,17 @@ Query, полученным в ходе выполнения практичес�
 1.  Представить в виде круговой диаграммы соотношение внешнего и
     внутреннего сетевого трафика.
 
-<figure>
-<img src="img/5.jpg" alt="Storage Yandex Cloud" />
-<figcaption aria-hidden="true">Storage Yandex Cloud</figcaption>
-</figure>
+![](img/5.jpg)
 
 1.  Представить в виде столбчатой диаграммы соотношение входящего и
     исходящего трафика из внутреннего сетвого сегмента.
 
-<figure>
-<img src="img/6.jpg" alt="Storage Yandex Cloud" />
-<figcaption aria-hidden="true">Storage Yandex Cloud</figcaption>
-</figure>
+![](img/6.jpg)
 
 1.  Построить график активности (линейная диаграмма) объема трафика во
     времени.
 
-<figure>
-<img src="img/lin.jpg" alt="Storage Yandex Cloud" />
-<figcaption aria-hidden="true">Storage Yandex Cloud</figcaption>
-</figure>
+![](img/lin.jpg)
 
 ### 4. Составляем дашборд
 
@@ -117,10 +99,7 @@ Query, полученным в ходе выполнения практичес�
 
 https://datalens.yandex.cloud/s99s5nmaip8og-dashbord
 
-<figure>
-<img src="img/7_2_dash.jpg" alt="Storage Yandex Cloud" />
-<figcaption aria-hidden="true">Storage Yandex Cloud</figcaption>
-</figure>
+![](img/7_2_dash.jpg)
 
 ## Оценка результатов
 
@@ -129,5 +108,11 @@ https://datalens.yandex.cloud/s99s5nmaip8og-dashbord
 
 ## Вывод
 
-Yandex DataLens - это удобный инструмент для построения чартов и
-дашбордов.
+Была проведена работа с Yandex DataLens и сделан первый дашборд на
+основе датасета.
+
+``` r
+sprintf("Практическая работа 2 завершена")
+```
+
+    [1] "Практическая работа 2 завершена"

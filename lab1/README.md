@@ -1,11 +1,4 @@
----
-editor_options: 
-  markdown: 
-    wrap: 72
----
-
 # P3_1_YaQuery
-
 Федосимова Александра Дмитриевна
 
 Использование технологии Yandex Query для анализа данных сетевой
@@ -35,7 +28,7 @@ editor_options:
 
 ### 1. Проверить доступность данных в Yandex Object Storage
 
-<https://storage.yandexcloud.net/arrow-datasets/yaqry_dataset.pqt>
+https://storage.yandexcloud.net/arrow-datasets/yaqry_dataset.pqt
 
 ### 2. Подключить бакет как источник данных для Yandex Query
 
@@ -46,15 +39,8 @@ editor_options:
 сохранить.
 
 <figure>
-
-<img src="img/1.jpg" alt="Storage Yandex Cloud"/>
-
-<figcaption aria-hidden="true">
-
-Storage Yandex Cloud
-
-</figcaption>
-
+<img src="img/1.jpg" alt="Storage Yandex Cloud" />
+<figcaption aria-hidden="true">Storage Yandex Cloud</figcaption>
 </figure>
 
 Теперь, после создания соединения, нужно указать, какой объект
@@ -62,120 +48,77 @@ Storage Yandex Cloud
 привязку данных.
 
 <figure>
-
-<img src="img/2.jpg" alt="Storage Yandex Cloud"/>
-
-<figcaption aria-hidden="true">
-
-Storage Yandex Cloud
-
-</figcaption>
-
+<img src="img/2.jpg" alt="Storage Yandex Cloud" />
+<figcaption aria-hidden="true">Storage Yandex Cloud</figcaption>
 </figure>
 
 Формат входных данных:
 
-```         
-SCHEMA=(
-timestamp TIMESTAMP NOT NULL,
-src STRING,
-dst STRING,
-port INT32,
-bytes INT32
-)
-```
+    SCHEMA=(
+    timestamp TIMESTAMP NOT NULL,
+    src STRING,
+    dst STRING,
+    port INT32,
+    bytes INT32
+    )
 
 Если настройки сделаны правильно, то запрос покажет таблицу.
 
 <figure>
-
-<img src="img/3.jpg" alt="Storage Yandex Cloud"/>
-
-<figcaption aria-hidden="true">
-
-Storage Yandex Cloud
-
-</figcaption>
-
+<img src="img/3.jpg" alt="Storage Yandex Cloud" />
+<figcaption aria-hidden="true">Storage Yandex Cloud</figcaption>
 </figure>
 
 ## Провести анализ данных
 
-### 1. Известно, что IP адреса внутренней сети начинаются с октетов, принадлежащих интервалу $$12-14$$. Определите количество хостов внутренней сети, представленных в датасете.
+### 1. Известно, что IP адреса внутренней сети начинаются с октетов, принадлежащих интервалу \[12-14\]. Определите количество хостов внутренней сети, представленных в датасете.
 
 <figure>
-
-<img src="img/4.jpg" alt="Storage Yandex Cloud"/>
-
-<figcaption aria-hidden="true">
-
-Storage Yandex Cloud
-
-</figcaption>
-
+<img src="img/4.jpg" alt="Storage Yandex Cloud" />
+<figcaption aria-hidden="true">Storage Yandex Cloud</figcaption>
 </figure>
 
-``` sql
-SELECT
-   COUNT(DISTINCT src)
-FROM
-   `yaqry_fedosimova`
-WHERE
-   src LIKE '12.%' OR src LIKE '13.%' OR src LIKE '14.%' 
-LIMIT 100;
-```
+    SELECT
+       COUNT(DISTINCT src)
+    FROM
+       `yaqry_fedosimova`
+    WHERE
+       src LIKE '12.%' OR src LIKE '13.%' OR src LIKE '14.%' 
+    LIMIT 100;
 
 `1000`
 
 ### 2. Определите суммарный объем исходящего трафика
 
 <figure>
-
-<img src="img/5.jpg" alt="Storage Yandex Cloud"/>
-
-<figcaption aria-hidden="true">
-
-Storage Yandex Cloud
-
-</figcaption>
-
+<img src="img/5.jpg" alt="Storage Yandex Cloud" />
+<figcaption aria-hidden="true">Storage Yandex Cloud</figcaption>
 </figure>
 
-``` sql
-SELECT
-   SUM(bytes)
-FROM
-   `yaqry_fedosimova`
-WHERE
-   src LIKE '12.%' OR src LIKE '13.%' OR src LIKE '14.%' 
-LIMIT 100;
-```
+    SELECT
+       SUM(bytes)
+    FROM
+       `yaqry_fedosimova`
+    WHERE
+       src LIKE '12.%' OR src LIKE '13.%' OR src LIKE '14.%' 
+    LIMIT 100;
 
 `10007506588`
 
 ### 3. Определите суммарный объем входящего трафика
 
 <figure>
-
-<img src="img/6.jpg" alt="Storage Yandex Cloud"/>
-
-<figcaption aria-hidden="true">
-
-Storage Yandex Cloud
-
-</figcaption>
-
+<img src="img/6.jpg" alt="Storage Yandex Cloud" />
+<figcaption aria-hidden="true">Storage Yandex Cloud</figcaption>
 </figure>
 
-``` sql
-SELECT
-   SUM(bytes)
-FROM
-   `yaqry_fedosimova`
-WHERE
-   dst LIKE '12.%' OR dst LIKE '13.%' OR dst LIKE '14.%' 
-LIMIT 100;
-```
+    SELECT
+       SUM(bytes)
+    FROM
+       `yaqry_fedosimova`
+    WHERE
+       dst LIKE '12.%' OR dst LIKE '13.%' OR dst LIKE '14.%' 
+    LIMIT 100;
 
 `15740490053`
 
@@ -186,3 +129,9 @@ LIMIT 100;
 ## Вывод
 
 Была осуществлена работа с системой Yandex Cloud и сервисами внутри неё.
+
+``` r
+sprintf("Практическая работа 1 завершена")
+```
+
+    [1] "Практическая работа 1 завершена"

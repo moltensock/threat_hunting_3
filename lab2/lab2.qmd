@@ -48,17 +48,17 @@ https://datalens.yandex.cloud/s99s5nmaip8og-dashbord
 3.  Выбрать в разделе “Файлы и сервисы” Yandex Query
 4.  Настроить и проверить подключение
 
-![Storage Yandex Cloud](img/1.jpg)
+![](img/1.jpg)
 
 ### 2. Создать из запроса YandexQuery датасет DataLens
 
-![Storage Yandex Cloud](img/3.jpg)
+![](img/3.jpg)
 
 ### 3. Делаем нужные графики и диаграммы
 
 Новое поле создаётся так:
 
-![Storage Yandex Cloud](img/4.jpg)
+![](img/4.jpg)
 
 ```         
 https://cloud.yandex.ru/ru/docs/datalens/concepts/calculations/formula-syntax
@@ -84,15 +84,15 @@ END
 
 1.  Представить в виде круговой диаграммы соотношение внешнего и внутреннего сетевого трафика.
 
-![Storage Yandex Cloud](img/5.jpg)
+![](img/5.jpg)
 
 2.  Представить в виде столбчатой диаграммы соотношение входящего и исходящего трафика из внутреннего сетвого сегмента.
 
-![Storage Yandex Cloud](img/6.jpg)
+![](img/6.jpg)
 
 3.  Построить график активности (линейная диаграмма) объема трафика во времени.
 
-![Storage Yandex Cloud](img/lin.jpg)
+![](img/lin.jpg)
 
 ### 4. Составляем дашборд
 
@@ -100,7 +100,7 @@ END
 
 https://datalens.yandex.cloud/s99s5nmaip8og-dashbord
 
-![Storage Yandex Cloud](img/7_2_dash.jpg)
+![](img/7_2_dash.jpg)
 
 ## Оценка результатов
 
@@ -108,4 +108,8 @@ https://datalens.yandex.cloud/s99s5nmaip8og-dashbord
 
 ## Вывод
 
-Yandex DataLens - это удобный инструмент для построения чартов и дашбордов.
+Была проведена работа с Yandex DataLens и сделан первый дашборд на основе датасета.
+
+```{r}
+sprintf("Практическая работа 2 завершена")
+```
